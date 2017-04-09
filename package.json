@@ -16,20 +16,29 @@
   "dependencies": {},
   "devDependencies": {
     "babel-cli": "^6.24.1",
+    "babel-core": "^6.24.1",
     "babel-eslint": "^7.2.1",
     "babel-jest": "^19.0.0",
     "babel-plugin-transform-async-to-generator": "^6.24.1",
+    "babel-plugin-transform-decorators-legacy": "^1.3.4",
+    "babel-plugin-transform-regenerator": "^6.24.1",
+    "babel-plugin-transform-runtime": "^6.23.0",
+    "babel-polyfill": "^6.23.0",
+    "babel-preset-env": "^1.3.3",
     "babel-preset-es2015": "^6.24.1",
+    "babel-preset-stage-0": "^6.24.1",
     "eslint": "^3.19.0",
     "eslint-config-standard": "^10.2.0",
     "eslint-plugin-import": "^2.2.0",
     "eslint-plugin-node": "^4.2.2",
     "eslint-plugin-promise": "^3.5.0",
     "eslint-plugin-standard": "^3.0.1",
-    "jest": "^19.0.2"
+    "jest": "^19.0.2",
+    "serverless": "^1.10.2",
+    "serverless-offline": "^3.13.2"
   },
   "scripts": {
-    "start": "./node_modules/.bin/babel-node --presets es2015 index.js",
+    "dev": "./node_modules/.bin/serverless offline",
     "test": "./node_modules/.bin/jest .",
     "lint": "./node_modules/.bin/eslint ."
   }

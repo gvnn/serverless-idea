@@ -1,0 +1,22 @@
+service: serverless-idea
+
+provider:
+  name: aws
+  runtime: nodejs6.10
+  region: eu-west-1
+  
+plugins:
+  - serverless-offline
+
+custom:
+  serverless-offline:
+    babelOptions:
+      presets: ["es2015", "stage-0"]
+
+functions:
+  hello:
+    handler: handler.hello
+    events:
+      - http:
+          path: hello
+          method: get
