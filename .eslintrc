@@ -1,0 +1,31 @@
+{
+  "parser": "babel-eslint",
+  "parserOptions": {
+    "ecmaVersion": 6,
+    "sourceType": "module"
+  },
+  "extends": [
+    "standard"
+  ],
+  "rules": {
+    "strict": 0,
+    "no-extra-semi": "error",
+    "semi": [
+      "error",
+      "never"
+    ],
+    "max-len": [
+      "error",
+      {
+        "code": 120,
+        "ignoreUrls": true
+      }
+    ]
+  },
+  "env": {
+    "browser": false,
+    "node": true,
+    "es6": true,
+    "jest": true
+  }
+}
