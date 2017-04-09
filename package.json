@@ -13,9 +13,7 @@
     "url": "https://github.com/gvnn/serverless-idea/issues"
   },
   "homepage": "https://github.com/gvnn/serverless-idea#readme",
-  "dependencies": {
-    "global": "^4.3.1"
-  },
+  "dependencies": {},
   "devDependencies": {
     "babel-cli": "^6.24.1",
     "babel-eslint": "^7.2.1",
