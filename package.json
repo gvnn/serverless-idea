@@ -41,7 +41,7 @@
     "serverless-offline": "^3.13.2"
   },
   "scripts": {
-    "dev": "./node_modules/.bin/serverless offline",
+    "dev": "SLS_DEBUG=* ./node_modules/.bin/serverless offline",
     "test": "./node_modules/.bin/jest .",
     "lint": "./node_modules/.bin/eslint ."
   }
