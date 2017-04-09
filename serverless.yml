@@ -13,10 +13,25 @@ custom:
     babelOptions:
       presets: ["es2015", "stage-0"]
 
+package:
+    include:
+      - node_modules
+      - src
+    exclude:
+      - .editorconfig
+      - .eslintrc
+      - .eslintignore
+      - .gitignore
+      - circle.yml
+      - LICENSE
+      - package.json
+      - README.md
+
 functions:
-  hello:
-    handler: handler.hello
-    events:
-      - http:
-          path: hello
-          method: get
+    graphQl:
+        handler: index.graphql
+        events:
+            - http:
+                path: graphql
+                method: post
+                cors: true
