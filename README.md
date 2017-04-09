@@ -22,3 +22,11 @@ or
 ### Run
 
 	$ npm run dev
+
+and to test graphql just install [ChromeiQL](https://chrome.google.com/webstore/detail/chromeiql/fkkiamalmpiidkljmicmjfbieiclmeij)
+
+## TODO
+
+- .env files
+- ORM + GraphQl schema integration
+- ...

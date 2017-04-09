@@ -4,7 +4,7 @@ provider:
   name: aws
   runtime: nodejs6.10
   region: eu-west-1
-  
+
 plugins:
   - serverless-offline
 
@@ -14,24 +14,25 @@ custom:
       presets: ["es2015", "stage-0"]
 
 package:
-    include:
-      - node_modules
-      - src
-    exclude:
-      - .editorconfig
-      - .eslintrc
-      - .eslintignore
-      - .gitignore
-      - circle.yml
-      - LICENSE
-      - package.json
-      - README.md
+  include:
+    - node_modules
+    - src
+  exclude:
+    - .editorconfig
+    - .eslintrc
+    - .eslintignore
+    - .gitignore
+    - circle.yml
+    - LICENSE
+    - package.json
+    - README.md
 
 functions:
-    graphQl:
-        handler: index.graphql
-        events:
-            - http:
-                path: graphql
-                method: post
-                cors: true
+  graphQl:
+      handler: index.graphql
+      events:
+        - http:
+            path: graphql
+            method: post
+            integration: lambda
+            cors: true

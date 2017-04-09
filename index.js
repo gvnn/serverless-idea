@@ -1,2 +1,2 @@
-import graphqlSrc from './lib/graphql'
-export const graphql = graphqlSrc.handler
+import { graphQlHandler } from './lib/graphql'
+export const graphql = graphQlHandler
