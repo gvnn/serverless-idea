@@ -27,6 +27,7 @@ and to test graphql just install [ChromeiQL](https://chrome.google.com/webstore/
 
 ## TODO
 
-- .env files
+- .env files or node-config
 - ORM + GraphQl schema integration
+- tests
 - ...
